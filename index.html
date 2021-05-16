@@ -4,16 +4,99 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,300&display=swap" rel="stylesheet">
     <title>LS Project</title>
     <style>
-        .e56{
-            font: 900 20px monospace;
-            padding: 1rem .5rem;
+        body{
+            font-family: 'Exo 2', sans-serif;
+            background: url(images/bg.jpg);
+            display: flex;
+            justify-content:center;
+            flex-direction: column;
+            
+
         }
+
+header{
+    width: auto;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(255, 136, 39, 0.678);
+}
+noscript{
+    color: cornsilk;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#main_block{
+    background: rgb(0, 255, 200);
+    width: 100em;
+    height: auto;
+}
+.main-menu{
+background-color: darkblue;
+border-radius: 10px;
+}
+.main-menu>li{
+    display: inline;
+    padding: 2em;
+}
+.main-menu a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 3;
+}
+footer:not(.revF) {
+    font-size: 25px;
+    padding: 1em;
+    text-align:center;
+    color: yellowgreen;
+    background-color: cornsilk;
+    border: 2px solid darkblue;
+    border-radius: 15px;
+}
     </style>
 </head>
 <body>
-    <h1>Lemon Squad Project</h1>
-    <button class="e56">ЖМЯК</button>
+    <noscript>Скорее всего ты вырубил js<img src="images/nojs.jpg" width="150px"> </noscript>
+    <header>
+        <div class="zagolo"><h1>Lemon Squad Project</h1></div><div class="rand_img"><img id="picr1" src="images/nojs.jpg" width="250px" id="picr1"></div></header>
+        <main>
+            <nav>
+                <ul class="main-menu">
+                    <li><a href="about.html" target="info">О нас</a></li>
+                    <li><a href="tape_jp.html" target="info">Кассеты Японии</a></li>
+                    <li><a href="tape_su.html" target="info">Кассеты СССР</a></li>
+                    <li><a href="tape_kr.html" target="info">Кассеты Кореи</a></li>
+                    <li><a href="tape_other.html" target="info">Кассеты других стран</a></li>
+                </ul>
+            </nav>
+            <div id="main_block">
+            <iframe src="about.html"  height="900px"  width="100%" name="info"></iframe>
+        </div>
+        </main>
+<footer id="main-footer">
+    &copy; 2021 Lemon Squad
+</footer>
+    <script>
+        let r_tape = ["images/tapes/jap/ef.jpg",
+        "images/tapes/jap/tdkd90.jpg"]
+
+        picr1=document.getElementById('picr1')
+
+function rimg(){
+    picr1.src=r_tape[Math.floor(Math.random()*r_tape.length)];
+}
+rimg()
+    </script>
 </body>
 </html>
