@@ -4,92 +4,143 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,300&display=swap" rel="stylesheet">
-    <title>LS Project</title>
+    <title>Кассеты от LS</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <style>
         body{
-            font-family: 'Exo 2', sans-serif;
-            background: url(images/bg.jpg);
-            display: flex;
-            justify-content:center;
-            flex-direction: column;
-            
-
+            background:lightsalmon ;
         }
-
-header{
-    width: auto;
-    height: 300px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    background: rgba(255, 136, 39, 0.678);
-}
-noscript{
-    color: cornsilk;
-}
-main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-#main_block{
-    background: rgb(0, 255, 200);
-    width: 100em;
-    height: auto;
-}
-.main-menu{
-background-color: darkblue;
-border-radius: 10px;
-}
-.main-menu>li{
-    display: inline;
-    padding: 2em;
-}
-.main-menu a {
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 400;
-    line-height: 3;
-}
-footer:not(.revF) {
-    font-size: 25px;
-    padding: 1em;
-    text-align:center;
-    color: yellowgreen;
-    background-color: cornsilk;
-    border: 2px solid darkblue;
-    border-radius: 15px;
-}
     </style>
 </head>
 <body>
-    <noscript>Скорее всего ты вырубил js<img src="images/nojs.jpg" width="150px"> </noscript>
-    <header>
-        <div class="zagolo"><h1>Lemon Squad Project</h1></div><div class="rand_img"><img id="picr1" src="images/nojs.jpg" width="250px" id="picr1"></div></header>
-        <main>
-            <nav>
-                <ul class="main-menu">
-                    <li><a href="about.html" target="info">О нас</a></li>
-                    <li><a href="tape_jp.html" target="info">Кассеты Японии</a></li>
-                    <li><a href="tape_su.html" target="info">Кассеты СССР</a></li>
-                    <li><a href="tape_kr.html" target="info">Кассеты Кореи</a></li>
-                    <li><a href="tape_other.html" target="info">Кассеты других стран</a></li>
-                </ul>
-            </nav>
-            <div id="main_block">
-            <iframe src="about.html"  height="900px"  width="100%" name="info"></iframe>
+    <Header>
+        <noscript>Скорее всего ты вырубил js</noscript>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 p-3">
+                    <h1 class="h1">Lemon Squad Project</h1>
+                    
+                </div>
+                <div class="d-flex flex-row-reverse bd-highlight">
+                    <div class="p-2 bd-highlight"><img src="images/nojs.jpg" id="picr1" alt="..." width="350"></div>
+                </div>
+            </div>
+            
         </div>
-        </main>
-<footer id="main-footer">
-    &copy; 2021 Lemon Squad
-</footer>
+        
+    </Header>
+    
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                        <div class="container-fluid">
+                          <a class="navbar-brand" href="#">Кассеты со всего мира</a>
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                              <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                              </li>
+                              <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Кассеты
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="japan.html">Японии</a></li>
+                                    <li><a class="dropdown-item" href="ussr.html">СССР</a></li>
+                                    <li><a class="dropdown-item" href="korea.html">Кореи</a></li>
+                                    <li><a class="dropdown-item" href="other_count.html">Др. стран</a></li>
+                                  </ul>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                    </nav>
+                </div>
+
+                <div class="col-8 p-3">
+                    <h2 class="h2">О проекте</h2>
+                    <p class="p">Добро пожаловать в наш проект. Этот проект про коллекцию аудиокассет из разных точек мира, а также коллекцию аудиокассет у Юзлова Андрея.</p>
+                </div>
+                <div class="col-4 p-3">
+                    <div class="card text-dark bg-light border-dark">
+                        <div class="card-header">Info</div>
+                        <div class="card-body">
+                            <h4 class="card-title">Contacts</h4>
+                            <p class="card-text">
+                                <ul>
+                                    <li>Phone - 8-(495)-000-00-00</li>
+                                    <li>email - yuzlovaa20@st.ithub.ru</li>
+                                    <li>email - malinovskiina21@st.ithub.ru</li>
+                                    <li>telegram: AndrLemon</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3 p-3">
+                    <div class="card text-dark bg-light border-dark">
+                        <img src="images/tdk_d.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h3 class="card-title">Japan</h3>
+                            <p class="card-text">В 1973 на рынок серьёзной кассетной техники вышла японская фирма Nakamichi, флагманские модели которой задали стандарт отрасли в целом и к 1980 году достигли теоретического потолка по измеримым параметрам и субъективному качеству звука. Разрыв в качестве звучания между механической грамзаписью и компакт-кассетой сократился до уровня, удовлетворяющего абсолютное большинство слушателей. Хотя цена такой техники была недоступна массовому потребителю, она задала направление для отрасли в целом, и уже к 1985—1988 годам производители массовых марок (Sony, Yamaha, Akai и т. п.) подошли вплотную к лидеру, во много раз понизив цены на качественные деки.</p>
+                            <div class="card-foter">
+                                <a href="japan.html" class="btn btn-dark">Read more...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 p-3">
+                    <div class="card text-dark bg-light border-dark">
+                        <img src="images/su_c_chr1.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h3 class="card-title">Soviet union</h3>
+                            <p class="card-text">В СССР высококачественная звукозапись на кассетах оставалась малодоступным товаром до 1979 года. Стереофонические кассетные магнитофоны выпускались с 1972 года[25], но большинство их относилось к II и III классу, а качество отечественных кассет, как чистых, так и с записью, было невысоким. Импортные же кассеты и магнитофоны можно было купить только в магазинах Внешпосылторга и комиссионных по ценам, недоступным большинству граждан.</p>
+                            <div class="card-foter">
+                                <a href="ussr.html" class="btn btn-dark">Read more...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 p-3">
+                    <div class="card text-dark bg-light border-dark">
+                        <img src="https://static.auction.ru/offer_images/2016/04/17/09/big/G/GqjFiZeP7Fv/skc_lx_90.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h3 class="card-title">Korea</h3>
+                            <p class="card-text">Кассеты, которые выпущены в Южной Кореи</p>
+                            <div class="card-foter">
+                                <a href="korea.html" class="btn btn-dark">Read more...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 p-3">
+                    <div class="card text-dark bg-light border-dark">
+                        <img src="images/int_cass.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h3 class="card-title">Others</h3>
+                            <p class="card-text">Кассеты, которые выпущены в разных странах и в больших количествах. Кассеты неизвестных компаний здесь тоже приветствуются</p>
+                            <div class="card-foter">
+                                <a href="#" class="btn btn-dark">Read more...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+               
+            </div>
+        </div>
+    </main>
     <script>
         let r_tape = ["images/tapes/jap/ef.jpg",
-        "images/tapes/jap/tdkd90.jpg"]
+        "images/tapes/jap/tdkd90.jpg", "images/tdk_t1.jpg", "images/ef90_88.jpg"]
 
         picr1=document.getElementById('picr1')
 

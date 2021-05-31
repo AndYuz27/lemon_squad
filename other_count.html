@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <style>
+      body{
+          background:lightsalmon ;
+      }
+  </style>
+  </head>
+<body>
+    <Header>
+      <noscript>Скорее всего ты вырубил js</noscript>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 p-3">
+                    <h1 class="h1">Lemon Squad Project</h1>
+                </div>
+                <div class="d-flex flex-row-reverse bd-highlight">
+                  <div class="p-2 bd-highlight"><img src="images/nojs.jpg" id="picr1" alt="..." width="350"></div>
+              </div>
+            </div>
+        </div>
+        
+    </Header>
+    
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 p-3">
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                        <div class="container-fluid">
+                          <a class="navbar-brand" href="index.html">Кассеты со всего мира</a>
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                              <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                              </li>
+                              <li class="nav-item dropdown active">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Кассеты
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <li><a class="dropdown-item" href="#">Др. стран</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="japan.html">Японии</a></li>
+                                    <li><a class="dropdown-item" href="ussr.html">СССР</a></li>
+                                    <li><a class="dropdown-item" href="korea.html">Кореи</a></li>
+                                    
+                                  </ul>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                    </nav>
+                </div>
+
+                <div class="col-12 p-3">
+                    <div class="card text-dark border-dark">
+                        <div class="card-header">Кассеты СССР</div>
+                        <div class="card-body">
+                            <p class="card-text">Здесь находяться аудиокассеты из Турции (RAKS), Германии (BASF) и других стран</p>
+                        </div>
+                        <div class="card-footer"><small class="text-muted">last update 3 days ago</small></div>
+                    </div>
+                </div>
+                
+                <div class="col-12">
+                    <div id="japanCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#japanCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#japanCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#japanCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="https://static.auction.ru/offer_images/2016/03/27/09/big/E/etOpnDFpEem/kasseta_raks_ax_90_novaja.jpg" class="d-block w-100" alt="RAKS">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>RAKS AX90</h5>
+                              <p>Type I, Normal position, </p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://static.auction.ru/offer_images/cmn8/2019/06/03/10/big/4/4NtqxROC7U2/kasseta_basf_ferro_extra_i_90.jpg" class="d-block w-100" alt="BASF">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>BASF FerroExtra 90 (Type I)</h5>
+                              <p>Данная аудиокассета являлась лучшей для записи. Звучание очень хорошая</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/int_cass.jpg" class="d-block w-100" alt="International Cassete">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>International Cassete</h5>
+                              <p>Неизвестная аудиокассета, похожая на BASF, видимо это китайская подделка. Type I, Normal position</p>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#japanCarousel" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#japanCarousel" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <script>
+          let r_tape = ["https://static.auction.ru/offer_images/2016/03/27/09/big/E/etOpnDFpEem/kasseta_raks_ax_90_novaja.jpg",
+          "https://static.auction.ru/offer_images/cmn8/2019/06/03/10/big/4/4NtqxROC7U2/kasseta_basf_ferro_extra_i_90.jpg", "images/int_cass.jpg"]
+  
+          picr1=document.getElementById('picr1')
+  
+  function rimg(){
+      picr1.src=r_tape[Math.floor(Math.random()*r_tape.length)];
+  }
+  rimg()
+      </script>
+</body>
+</html>
